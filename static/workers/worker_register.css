@@ -1,0 +1,121 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #eef1f5; /* subtle grey */
+}
+
+/* ========== NAVBAR ========== */
+nav {
+    background-color: #1e2a38;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ========== FORM WRAPPER (Centers Card) ========== */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* ========== FORM CARD (Container) ========== */
+.form-card {
+    width: 480px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;                 /* <-- EXACT 20px gap inside card */
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+.form-card:hover {
+    box-shadow: 0px 12px 35px rgba(0,0,0,0.18);
+}
+
+/* ========== TITLE (H2) ========== */
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #1e2a38;
+    text-align: center;
+    margin-bottom: 20px;           /* <- EXACT gap between title & fields */
+}
+
+/* ========== FORM FIELDS ========== */
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="number"],
+.form-card input[type="password"],
+.form-card select,
+.form-card textarea {
+    width: 100%;                   /* full width inside card */
+    height: 45px;                  /* fixed height */
+    padding: 10px 14px;
+    margin-bottom: 20px;           /* <-- EXACT 20px gap between fields */
+    border-radius: 8px;
+    border: 1px solid #c5cad3;
+    background: #fafafa;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.form-card textarea {
+    height: 90px;                  /* bigger box */
+}
+
+/* FOCUS EFFECT */
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+    background: #fff;
+    border-color: #007bff;
+    box-shadow: 0px 0px 6px rgba(0,123,255,0.3);
+}
+
+/* ========== LABELS (Django form.as_p) ========== */
+.form-card label {
+    font-size: 15px;
+    margin-bottom: 6px;
+    display: block;
+    color: #333;
+    font-weight: 500;
+}
+
+/* ========== SUBMIT BUTTON ========== */
+.form-card input[type="submit"] {
+    width: 100%;
+    height: 46px;
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.25s ease-in-out;
+}
+
+.form-card input[type="submit"]:hover {
+    background: #005ac2;
+}
+
+/* ========== RESPONSIVE (Mobile Friendly) ========== */
+@media (max-width: 540px) {
+    .form-card {
+        width: 92%;
+        padding: 20px;
+    }
+}
