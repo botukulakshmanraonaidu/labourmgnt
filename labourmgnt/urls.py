@@ -27,5 +27,6 @@ urlpatterns = [
     path('',homepage,name='homepage'),
     path('wrkrgs/',include('worker_registration.urls')),
     path('usersrgs/',include('user_registration.urls')),
-    path('srvs/',include('services.urls'))
+    path('srvs/',include('services.urls')),
+    path('bkngs/',include('booking.urls')),
 ]

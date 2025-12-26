@@ -1,3 +1,5 @@
 {
-    "CodeGPT.apiKey": "Gemini CLI"
+    "CodeGPT.apiKey": "Anthropic",
+    "diffEditor.codeLens": true,
+    "python-envs.pythonProjects": []
 }

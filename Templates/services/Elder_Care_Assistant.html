@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elder Care Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'services/service.css' %}">
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Elder Care Services</h1>
+        <p>Professional elder care services for your parents.</p>
+    </div>
+    <img src=" {% static 'images/Elder_Care_Assistant_Service/elder_care_assistant.jpeg' %}" alt="Elder Care Assistant">
+</section>
+
+<!-- SERVICES LIST -->
+<h2 class="section-title">Our Services</h2>
+
+<div class="services-box">
+    <ul>
+        <li>Elder Care Attendant (Full-Time)</li>
+        <li>Part-Time Elder Care Attendant</li>
+        <li>Daily Living Assistance</li>
+        <li>Bedridden Elder Care</li>
+        <li>Vital Monitoring Support</li>
+    </ul>
+</div>
+
+<!-- AVAILABLE ELDER CARE ASSISTANTS -->
+<h2 class="section-title">Available Elder Care Assistants</h2>
+
+<div class="workers">
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/women/14.jpg">
+        <h3>Ramesh Kumar</h3>
+        <p class="experience">5+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="book-now" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/women/15.jpg">
+        <h3>Suresh Naidu</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status busy">Busy</span>
+        <a href="#" class="hire-btn disabled">Unavailable</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/women/16.jpg">
+        <h3>Anita Sharma</h3>
+        <p class="experience">4 years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/84.jpg">
+        <h3>Vikram Singh</h3>
+        <p class="experience">8+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/85.jpg">
+        <h3>Raghu vanshi</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/86.jpg">
+        <h3>Krishna</h3>
+        <p class="experience">5+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#book-now" class="hire-btn">Hire Now</a>
+    </div>
+
+</div>
+
+<a href="{% url 'book-worker'%}" class="book-btn" id="book-now">Book an Elder Care Assistant →</a>
+
+</body>
+</html>

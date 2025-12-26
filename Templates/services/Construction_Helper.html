@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Construction Helper Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'services/service.css' %}">
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Construction Helper Services</h1>
+        <p>Professional construction helper services for your home and office.</p>
+    </div>
+    <img src=" {% static 'images/Construction_Helper_Service/construction_helper.jpeg' %}" alt="Construction Helper">
+</section>
+
+<!-- SERVICES LIST -->
+<h2 class="section-title">Our Services</h2>
+
+<div class="services-box">
+    <ul>
+        <li>General Construction Helper</li>
+        <li>Material Handling Helper</li>
+        <li>Concrete Mixing Helper</li>
+        <li>House Construction Helper</li>
+        <li>Renovation & Repair Helper</li>
+    </ul>
+</div>
+
+<!-- AVAILABLE CONSTRUCTION HELPERS -->
+<h2 class="section-title">Available Construction Helpers</h2>
+
+<div class="workers">
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/75.jpg">
+        <h3>Ramesh Kumar</h3>
+        <p class="experience">5+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="book-now" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg">
+        <h3>Suresh Naidu</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status busy">Busy</span>
+        <a href="#" class="hire-btn disabled">Unavailable</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/women/11.jpg">
+        <h3>Anita Sharma</h3>
+        <p class="experience">4 years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/78.jpg">
+        <h3>Vikram Singh</h3>
+        <p class="experience">8+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/79.jpg">
+        <h3>Raghu vanshi</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/80.jpg">
+        <h3>Krishna</h3>
+        <p class="experience">5+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#book-now" class="hire-btn">Hire Now</a>
+    </div>
+
+</div>
+
+<a href="{% url 'book-worker'%}" class="book-btn" id="book-now">Book Construction Helper →</a>
+
+</body>
+</html>

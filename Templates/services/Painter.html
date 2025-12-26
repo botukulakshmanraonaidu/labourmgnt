@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Painting Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'services/service.css' %}">
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Painting Services</h1>
+        <p>Professional painting solutions for your home and office.</p>
+    </div>
+    <img src=" {% static 'images/Painting_Service/painter.jpg' %}" alt="Painter">
+</section>
+
+<!-- SERVICES LIST -->
+<h2 class="section-title">Our Services</h2>
+
+<div class="services-box">
+    <ul>
+        <li>Full Home Interior Painting</li>
+        <li>Single Room Painting</li>
+        <li>Wall Repainting & Touch-Up</li>
+        <li>Texture & Decorative Painting</li>
+        <li>Waterproofing & Damp Proofing</li>
+    </ul>
+</div>
+
+<!-- AVAILABLE Painters -->
+<h2 class="section-title">Available Painters</h2>
+
+<div class="workers">
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/7.jpg">
+        <h3>Ramesh Kumar</h3>
+        <p class="experience">5+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="book-now" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/8.jpg">
+        <h3>Suresh Naidu</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status busy">Busy</span>
+        <a href="#" class="hire-btn disabled">Unavailable</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/women/9.jpg">
+        <h3>Anitha </h3>
+        <p class="experience">4 years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/10.jpg">
+        <h3>Vikram Singh</h3>
+        <p class="experience">8+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/11.jpg">
+        <h3>Raghu vanshi</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/12.jpg">
+        <h3>Krishna</h3>
+        <p class="experience">5+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#book-now" class="hire-btn">Hire Now</a>
+    </div>
+
+</div>
+
+<a href="{% url 'book-worker'%}" class="book-btn" id="book-now">Book an Painter →</a>
+
+</body>
+</html>

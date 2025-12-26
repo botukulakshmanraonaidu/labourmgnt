@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Worker</title>
+    <link rel="stylesheet" href="{% static 'services/book_worker.css' %}">
+</head>
+<body>
+
+<div class="booking-container">
+    <div class="booking-card">
+        <h2 class="booking-title">Book a Worker</h2>
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">book now</button>
+        </form>
+
+        {% if message %}
+            <div class="success-message">{{ message }}</div>
+        {% endif %}
+    </div>
+</div>
+
+</body>
+</html>

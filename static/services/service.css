@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #a2a5a8;
+    padding: 40px 60px;
+    color: #807f7f;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.hero img {
+    width: 380px;
+    border-radius: 12px;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin: 40px 0 20px;
+    color: #989292;
+}
+
+/* SERVICES LIST */
+.services-box {
+    background: hsl(0, 4%, 91%);
+    width: 70%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.services-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-box li {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.services-box li::before {
+    content: "✔";
+    color: #38a169;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* WORKERS GRID */
+.workers {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.worker-card {
+    background: #d4d3d3;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.worker-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.worker-card h3 {
+    margin: 8px 0;
+}
+
+.experience {
+    font-size: 14px;
+    color: #807f7f;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.available {
+    background: #38a169;
+    color: #fff;
+}
+
+.busy {
+    background: #e53e3e;
+    color: #fff;
+}
+
+.hire-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    background: #2b6cb0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.hire-btn.disabled {
+    background: #a0aec0;
+    pointer-events: none;
+}
+
+/* BOOK BUTTON */
+.book-btn {
+    display: block;
+    width: 300px;
+    margin: 40px auto;
+    background: #2b6cb0;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+}
