@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Air Conditioner Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'services/service.css' %}">
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Air Conditioner Services</h1>
+        <p>Professional air conditioning Services for your home and office.</p>
+    </div>
+    <img src=" {% static 'images/AC_Technician_Service/AC_Technician.jpg' %}" alt="AC Technician">
+</section>
+
+<!-- SERVICES LIST -->
+<h2 class="section-title">Our Services</h2>
+
+<div class="services-box">
+    <ul>
+        <li>AC Installation</li>
+        <li>AC Uninstallation / Removal</li>
+        <li>AC General Service</li>
+        <li>AC Gas Refilling</li>
+        <li>Repair & Troubleshooting</li>
+    </ul>
+</div>
+
+<!-- AVAILABLE AC TECHNICIANS -->
+<h2 class="section-title">Available AC Technicians</h2>
+
+<div class="workers">
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/36.jpg">
+        <h3>Ramesh Kumar</h3>
+        <p class="experience">5+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="book-now" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/38.jpg">
+        <h3>Suresh Naidu</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status busy">Busy</span>
+        <a href="#" class="hire-btn disabled">Unavailable</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/women/4.jpg">
+        <h3>Anita Sharma</h3>
+        <p class="experience">4 years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/39.jpg">
+        <h3>Vikram Singh</h3>
+        <p class="experience">8+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/40.jpg">
+        <h3>Raghu vanshi</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/41.jpg">
+        <h3>Krishna</h3>
+        <p class="experience">5+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#book-now" class="hire-btn">Hire Now</a>
+    </div>
+
+</div>
+
+<a href="{% url 'book-worker'%}" class="book-btn" id="book-now">Book Ac Technician →</a>
+
+</body>
+</html>

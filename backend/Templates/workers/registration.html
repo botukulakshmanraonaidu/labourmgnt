@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'workers/worker_register.css' %}">
+    <title>Worker Registration</title>
+</head>
+<body>
+    <nav>
+        <marquee><h3>Labour management system</h3></marquee>
+    </nav>
+    <div class="form-wrapper">
+    <div class="form-card">
+        <h2 class="form-title">Worker Registration</h2>
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <input type="submit" value="Register Worker">
+        </form>
+    </div>
+</div>
+</body>
+</html>

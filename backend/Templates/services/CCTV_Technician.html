@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CCTV Technician Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'services/service.css' %}">
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>CCTV Technician Services</h1>
+        <p>Professional CCTV installation and maintenance services for your home and office.</p>
+    </div>
+    <img src=" {% static 'images/CCTV_Technician_Service/cctv_technician.jpeg' %}" alt="CCTV Technician">
+</section>
+
+<!-- SERVICES LIST -->
+<h2 class="section-title">Our Services</h2>
+
+<div class="services-box">
+    <ul>
+        <li>CCTV Installation</li>
+        <li>Camera Replacement / Relocation</li>
+        <li>DVR / NVR Installation</li>
+        <li>Network & Connectivity Issues</li>
+        <li>CCTV Configuration & Settings</li>
+    </ul>
+</div>
+
+<!-- AVAILABLE ELECTRICIANS -->
+<h2 class="section-title">Available Electricians</h2>
+
+<div class="workers">
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/62.jpg">
+        <h3>Ramesh Kumar</h3>
+        <p class="experience">5+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="book-now" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/63.jpg">
+        <h3>Suresh Naidu</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status busy">Busy</span>
+        <a href="#" class="hire-btn disabled">Unavailable</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/women/7.jpg">
+        <h3>Anita Sharma</h3>
+        <p class="experience">4 years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/73.jpg">
+        <h3>Vikram Singh</h3>
+        <p class="experience">8+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/74.jpg">
+        <h3>Raghu vanshi</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/75.jpg">
+        <h3>Krishna</h3>
+        <p class="experience">5+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#book-now" class="hire-btn">Hire Now</a>
+    </div>
+
+</div>
+
+<a href="{% url 'book-worker'%}" class="book-btn" id="book-now">Book Services →</a>
+
+</body>
+</html>

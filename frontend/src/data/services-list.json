@@ -1,0 +1,122 @@
+[
+  {
+    "img": "{% static 'images/services/electrician.jpg' %}",
+    "name": "Electrician",
+    "description": "Wiring, appliances installation, short circuit repair.",
+    "link": "{% url 'Electrician' %}"
+  },
+  {
+    "img": "{% static 'images/services/plumber.png' %}",
+    "name": "Plumber",
+    "description": "Pipe repair, tap installation, bathroom fittings.",
+    "link": "{% url 'Plumber' %}"
+  },
+  {
+    "img": "{% static 'images/services/Carpenter.png' %}",
+    "name": "Carpenter",
+    "description": "Furniture repair, door/window fittings.",
+    "link": "{% url 'Carpenter' %}"
+  },
+  {
+    "img": "{% static 'images/services/mason.png' %}",
+    "name": "Mason",
+    "description": "Brickwork, plastering, tile work.",
+    "link": "{% url 'Mason' %}"
+  },
+  {
+    "img": "{% static 'images/services/painter.png' %}",
+    "name": "Painter",
+    "description": "House painting, wall textures, waterproofing.",
+    "link": "{% url 'Painter' %}"
+  },
+  {
+    "img": "{% static 'images/services/driver.png' %}",
+    "name": "Driver",
+    "description": "Car drivers, commercial drivers, delivery drivers.",
+    "link": "{% url 'Driver' %}"
+  },
+  {
+    "img": "{% static 'images/services/welder.png' %}",
+    "name": "Welder",
+    "description": "Metal fabrication, welding works, gate repairs.",
+    "link": "{% url 'Welder' %}"
+  },
+  {
+    "img": "{% static 'images/services/loading_unloading.png' %}",
+    "name": "Loading / Unloading",
+    "description": "Transport helpers, warehouse labour.",
+    "link": "{% url 'Loading_Unloading' %}"
+  },
+  {
+    "img": "{% static 'images/services/cleaning_house_keeping.png' %}",
+    "name": "Cleaning & Housekeeping",
+    "description": "Home cleaning, office cleaning, domestic helpers.",
+    "link": "{% url 'Cleaning_Housekeeping' %}"
+  },
+  {
+    "img": "{% static 'images/services/AC_Technician.png' %}",
+    "name": "AC Technician",
+    "description": "AC installation, servicing, gas filling.",
+    "link": "{% url 'AC_Technician' %}"
+  },
+  {
+    "img": "{% static 'images/services/Security_Guard.png' %}",
+    "name": "Security Guard",
+    "description": "Residential, commercial and event security.",
+    "link": "{% url 'Security_Guard' %}"
+  },
+  {
+    "img": "{% static 'images/services/Gardener.png' %}",
+    "name": "Gardener",
+    "description": "Garden maintenance, lawn cutting, plant care.",
+    "link": "{% url 'Gardener' %}"
+  },
+  {
+    "img": "{% static 'images/services/cook.png' %}",
+    "name": "Cook",
+    "description": "Home cooks, event cooks, catering support.",
+    "link": "{% url 'Cook' %}"
+  },
+  {
+    "img": "{% static 'images/services/CCTV_Technician.png' %}",
+    "name": "CCTV Technician",
+    "description": "CCTV installation, maintenance, security systems.",
+    "link": "{% url 'CCTV_Technician' %}"
+  },
+  {
+    "img": "{% static 'images/services/Solar_Panel_Technician.png' %}",
+    "name": "Solar Panel Technician",
+    "description": "Solar installation, maintenance, inverter setup.",
+    "link": "{% url 'Solar_Panel_Technician' %}"
+  },
+  {
+    "img": "{% static 'images/services/Constructor_Helper.png' %}",
+    "name": "Construction Helper",
+    "description": "Site helpers, daily wage labour support.",
+    "link": "{% url 'Construction_Helper' %}"
+  },
+  {
+    "img": "{% static 'images/services/Babysitter.png' %}",
+    "name": "Babysitter",
+    "description": "Child care, day & night babysitting services.",
+    "link": "{% url 'Babysitter' %}"
+  },
+  {
+    "img": "{% static 'images/services/Elder_Care_Assistant.png' %}",
+    "name": "Elder Care Assistant",
+    "description": "Senior citizen care, home assistance.",
+    "link": "{% url 'Elder_Care_Assistant' %}"
+  },
+  {
+    "img": "{% static 'images/services/Agricultural_Worker.png' %}",
+    "name": "Agricultural Worker",
+    "description": "Farming, harvesting, field labour.",
+    "link": "{% url 'Agricultural_Worker' %}"
+  },
+  {
+    "img": "{% static 'images/services/Pest_Control_Worker.png' %}",
+    "name": "Pest Control Worker",
+    "description": "Pest treatment, sanitation services.",
+    "link": "{% url 'Pest_Control_Worker' %}"
+  }
+]

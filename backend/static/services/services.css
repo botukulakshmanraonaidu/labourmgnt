@@ -1,0 +1,104 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f5f7fa;
+}
+
+/* MAIN CONTAINER */
+.services-container {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+/* TITLE */
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e2a38;
+    margin-bottom: 40px;
+}
+
+/* GRID LAYOUT */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+/* SERVICE CARD */
+.service-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* SERVICE ICON */
+.service-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 18px;
+}
+
+/* SERVICE TITLE */
+.service-card h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* SERVICE DESCRIPTION */
+.service-card p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* VIEW MORE BUTTON */
+.service-card .service-btn {
+    display: inline-block;
+    margin-top: 15px;
+
+    padding: 10px 26px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 25px;
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.35);
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.service-card .service-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #003f8a);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.45);
+}
+
+/* CLICK EFFECT */
+.service-card .service-btn:active {
+    transform: translateY(0);
+}
+

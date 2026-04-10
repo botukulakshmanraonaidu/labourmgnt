@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="{% static 'workers/otp_verify.css' %}">
+</head>
+
+<body>
+
+    <div class="otp-container">
+
+        <h2>Enter OTP</h2>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <div class="otp-inputs">
+                <input type="text" maxlength="1" name="otp1" required>
+                <input type="text" maxlength="1" name="otp2" required>
+                <input type="text" maxlength="1" name="otp3" required>
+                <input type="text" maxlength="1" name="otp4" required>
+            </div>
+
+            <button type="submit">Verify OTP</button>
+
+            {% for message in messages %}
+                <p class="error-msg">{{ message }}</p>
+            {% endfor %}
+        </form>
+
+    </div>
+
+</body>
+</html>

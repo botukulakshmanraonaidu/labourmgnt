@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carpenter Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'services/service.css' %}">
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Carpenter Services</h1>
+        <p>Professional carpentry solutions for your home and office.</p>
+    </div>
+    <img src=" {% static 'images/Carpenter_Service/carpenter.jpg' %}" alt="Carpenter">
+</section>
+
+<!-- SERVICES LIST -->
+<h2 class="section-title">Our Services</h2>
+
+<div class="services-box">
+    <ul>
+        <li>Furniture Repair</li>
+        <li>Door & Window Services</li>
+        <li>Cupboard & Wardrobe Work</li>
+        <li>Kitchen & Modular Work</li>
+        <li>Curtain Rod & Fixture Fitting</li>
+    </ul>
+</div>
+
+<!-- AVAILABLE Carpenters -->
+<h2 class="section-title">Available Carpenters</h2>
+
+<div class="workers">
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/51.jpg">
+        <h3>Rakesh Kumar</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="book-now" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/52.jpg">
+        <h3>Suresh Krishna</h3>
+        <p class="experience">2+ years experience</p>
+        <span class="status busy">Busy</span>
+        <a href="#" class="hire-btn disabled">Unavailable</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/women/53.jpg">
+        <h3>Anita Sharma</h3>
+        <p class="experience">1+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/54.jpg">
+        <h3>Vikram Singh</h3>
+        <p class="experience">5+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/55.jpg">
+        <h3>Raghu vanshi</h3>
+        <p class="experience">3+ years experience</p>
+        <span class="status available">Available</span>
+        <a href="#" class="hire-btn">Hire Now</a>
+    </div>
+
+    <div class="worker-card">
+        <img src="https://randomuser.me/api/portraits/men/56.jpg">
+        <h3>Krishna</h3>
+        <p class="experience">6+ years experience</p>
+        <span class="status busy">Busy</span>
+        <a href="#book-now" class="hire-btn disabled">Unavailable</a>
+    </div>
+
+</div>
+
+<a href="{% url 'book-worker'%}" class="book-btn" id="book-now">Book a Carpenter →</a>
+
+</body>
+</html>

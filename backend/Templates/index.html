@@ -1,0 +1,142 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labour Management System</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+    <h2>Labour Management System</h2>
+
+    <div class="nav-links">
+
+        <a href="{% url 'homepage' %}">Home</a>
+        <a href="{% url 'services' %}">Services</a>
+
+        <!-- WRAP DROPDOWN IN A NON-FLEX CONTAINER -->
+        <div class="dropdown-wrapper">
+            <div class="dropdown">
+                <a class="dropdown-main-btn">Register</a>
+
+                <div class="dropdown-menu">
+                    <a href="{% url 'user_register' %}">User Register</a>
+                    <a href="{% url 'Worker_registration' %}">Worker Register</a>
+                </div>
+            </div>
+        </div>
+         <div class="dropdown-wrapper">
+            <div class="dropdown">
+                <a class="dropdown-main-btn">Login</a>
+
+                <div class="dropdown-menu">
+                    <a href="{% url 'user_login' %}">User Login</a>
+                    <a href="{% url 'worker_login' %}">Worker Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown-wrapper">
+            <div class="dropdown">
+                <a class="dropdown-main-btn">Profile</a>
+
+                <div class="dropdown-menu">
+                    <a href="#">View Profile</a>
+                    <a href="#">Edit Profile</a>
+                    <a href="#">Orders History</a>
+                    <a href="#">Sign Off</a>
+                    <a href="#">Change Mobile Number</a>
+                    <a href="#">Password change</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Efficient Labour Management Solution</h1>
+        <p>
+            Track attendance, manage work assignments, and streamline payments
+            with a secure and reliable system.
+        </p>
+        <div class="hero-buttons">
+            <a href="#" class="btn primary">Get Started</a>
+            <a href="#" class="btn secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="stat-box">
+        <h2>120+</h2>
+        <p>Registered Labours</p>
+    </div>
+    <div class="stat-box">
+        <h2>Real-Time</h2>
+        <p>Attendance Tracking</p>
+    </div>
+    <div class="stat-box">
+        <h2>Secure</h2>
+        <p>Payment Management</p>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <h2>Key Features</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>Labour Registration</h3>
+            <p>Quick and easy onboarding of labours.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Attendance Monitoring</h3>
+            <p>Real-time attendance and work tracking.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Work Assignment</h3>
+            <p>Assign and manage daily work efficiently.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Payroll Management</h3>
+            <p>Hassle-free and transparent payments.</p>
+        </div>
+    </div>
+</section>
+
+<!-- USER ROLES -->
+<section class="roles">
+    <h2>User Roles</h2>
+    <div class="role-grid">
+        <div class="role-card">Labour</div>
+        <div class="role-card">Supervisor</div>
+        <div class="role-card">Admin</div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-us">
+    <h2>Why Choose Us?</h2>
+    <div class="why-grid">
+        <div class="why-card">Easy to Use</div>
+        <div class="why-card">Secure & Reliable</div>
+        <div class="why-card">Save Time & Cost</div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 Labour Management System. All Rights Reserved.</p>
+</footer>    
+
+</body>
+</html>
